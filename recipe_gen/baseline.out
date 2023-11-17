@@ -1,0 +1,8 @@
+Device: cpu
+0:00:00.101977 - Loaded 698,901 training interactions, 7,023 validation, 12,455 test (73.306 MB total memory)
+0:00:00.131237 - Loaded items for 25,076 users, 6,437 maximum interactions/user (17.103 MB total memory)
+0:00:00.486575 - Loaded 178,265 recipes (242.666 MB total memory)
+0:00:00.632924 - Loaded map for 8,024 unique ingredients
+0:00:00.637534 - Data loaded.
+INGR EMBEDDING
+]
