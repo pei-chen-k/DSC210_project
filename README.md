@@ -4,21 +4,20 @@
 ### Instructor: Dr. Tsui-wei Weng
 
 #### Instructions:
-
-(Example from sample project github readme. Need to change.)
-
-* Ensure that the following libraries are installed in python 3 environment:
-  - scikit-learn
-  - tqdm
-  - nltk
-  - umap
+Please make sure that the following libraries are installed in python 3 environment:
+  - numpy
+  - pandas
+  - math
+  - scipy
+  - collections
   - matplotlib
-  - seaborn
-  - wordcloud
-
-* Open Latent_Semantic_Analysis.ipynb and run all the cells of the notebook.
+  - time
+  - csv
 
 * **NLA approach - matrix factorization**
+  - Open 210_project_MatrixFactorization.ipynb on Google Colab
+  - Download interactions_train.csv, interactions_validation.csv, and interactions_test.csv and upload them as runtime's files of 210_project_MatrixFactorization.ipynb
+  - Run all the cells of the notebook 210_project_MatrixFactorization.ipynb
 
 
 * **SOTA approach - improved Jaccard similarity**
@@ -30,19 +29,11 @@
 
 * **NLA approach - matrix factorization**
 
-(Example from sample project github readme. Need to change.)
+Training and Validation MSE with different values of hyperparameter n_factor:
+<img width="572" alt="MSE_VS_nfactors" src="https://github.com/pei-chen-k/DSC210_project/assets/66982698/1a2626f1-b6a9-47a0-8df1-3e8be4a86d18">
 
-Top 5 words for each of the topics:
-<img width="828" alt="Screen Shot 2022-04-15 at 9 20 17 AM" src="https://user-images.githubusercontent.com/18485647/163595256-eaa19d1b-9c52-4cd2-9a63-b1dbcd728d23.png">
-
-Distributions of top 3 topics to each document:
-<p align="center">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 19 11 AM" src="https://user-images.githubusercontent.com/18485647/163595137-f9ea7e72-1f20-417f-bad4-4161cfcbe2f3.png">
- <img width="33%" alt="Screen Shot 2022-04-15 at 9 20 03 AM" src="https://user-images.githubusercontent.com/18485647/163595234-1951d9bf-0a54-40ec-8002-50d0042be260.png">
- <img width="33%" alt="Screen Shot 2022-04-15 at 9 19 35 AM" src="https://user-images.githubusercontent.com/18485647/163595185-18ca8fcc-ef7d-48fe-b7a5-76bb485a80a2.png">
-</p>
-Visualized embedding of documents in 2-D space:
-<img width="816" alt="Screen Shot 2022-04-15 at 9 23 07 AM" src="https://user-images.githubusercontent.com/18485647/163595568-e9d9fd26-986a-4c06-8bf8-3bfbb95dbc79.png">
+How training MSE changes with epochs:
+<img width="854" alt="MSE_VS_epochs" src="https://github.com/pei-chen-k/DSC210_project/assets/66982698/5b5dede9-e341-4359-b0f0-476faf531389">
 
 
 * **SOTA approach - improved Jaccard similarity**
