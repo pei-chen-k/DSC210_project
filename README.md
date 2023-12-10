@@ -60,7 +60,7 @@ Our experiments showed that all four SOTA approaches have lower testing MSE and 
 
 | Aspect      | SOTA (RJAC_U) | SOTA (RJAC_D) | SOTA (RJAC_DUB) | SOTA (WRJAC_DUB) | NLA Approach           |
 | :---:       | :---:         | :---:         | :---:           | :---:            | :---:                  |
-| Training MSE| Not applicable| Not applicable| Not applicable  | Not applicable   | 0.015                  |
-| Testing MSE | 1.019         | 1.022         | 1.018           | 1.018            |19.61 (1st) / 2.61 (2nd)|
-| Run time    | 121.913s      | 123.175s      | 123.656s        | 129.773s         | 1714.93s               |
+| Training MSE| Not applicable| Not applicable| Not applicable  | Not applicable   | 0.016                  |
+| Testing MSE | 1.019         | 1.022         | 1.018           | 1.018            |19.61 (1st) / 2.47 (2nd)|
+| Run time    | 121.913s      | 123.175s      | 123.656s        | 129.773s         | 1543.14s               |
 
