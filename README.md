@@ -22,7 +22,9 @@
 
 
 * **SOTA approach - improved Jaccard similarity**
-
+  - Please download interactions_train.csv and DSC210_SOTA.ipynb. 
+  - Upload both files to Google Drive. 
+  - Open DSC210_SOTA.ipynb in Google Colab and run all the cells of the notebook (will need to give permission to access Google Drive).
 
 #### Results:
 
@@ -45,17 +47,20 @@ Visualized embedding of documents in 2-D space:
 
 * **SOTA approach - improved Jaccard similarity**
 
-(Example from sample project github readme. Need to change.)
+Comparing our four SOTA approaches’s MSE with original Jaccard similarity approach’s MSE
+<img width="572" alt="MSE" src="https://github.com/pei-chen-k/DSC210_project/assets/114783428/d810b652-2299-4e82-ac55-a0d56a8ca9ed">
 
-Top 5 words for each of the topics:
-<img width="844" alt="Screen Shot 2022-04-15 at 9 23 15 AM" src="https://user-images.githubusercontent.com/18485647/163595579-638c74c8-27f4-4ee2-ade2-e62406422600.png">
+Comparing our four SOTA approaches’s run time with the original Jaccard similarity approach’s run time
+<img width="572" alt="Run_Time" src="https://github.com/pei-chen-k/DSC210_project/assets/114783428/b0d33a74-6694-4500-96c5-1d77ae74de7b">
 
-Distributions of top 3 topics to each document:
-<p align="center">
-  <img width="33%" alt="Screen Shot 2022-04-15 at 9 24 03 AM" src="https://user-images.githubusercontent.com/18485647/163595666-06612d57-978b-4245-b89f-72fdf4bc1f7e.png">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 24 12 AM" src="https://user-images.githubusercontent.com/18485647/163595676-8fb7feb8-7471-440a-a19f-8c2735f987cb.png">
-<img width="33%" alt="Screen Shot 2022-04-15 at 9 24 19 AM" src="https://user-images.githubusercontent.com/18485647/163595701-c097c01f-66f4-497a-af5b-4f63988e3284.png">
-</p>
 
-Visualized embedding of documents in 2-D space:
-<img width="784" alt="Screen Shot 2022-04-15 at 9 24 38 AM" src="https://user-images.githubusercontent.com/18485647/163595735-bed01c6a-9d73-41be-8f34-284aee22ec91.png">
+### Compare and contrast:
+
+Our experiments showed that all four SOTA approaches have lower testing MSE and lower run time compared to the NLA approach.
+
+| Aspect      | SOTA (RJAC_U) | SOTA (RJAC_D) | SOTA (RJAC_DUB) | SOTA (WRJAC_DUB) | NLA Approach           |
+| :---:       | :---:         | :---:         | :---:           | :---:            | :---:                  |
+| Training MSE| Not applicable| Not applicable| Not applicable  | Not applicable   | 0.015                  |
+| Testing MSE | 1.019         | 1.022         | 1.018           | 1.018            |19.61 (1st) / 2.61 (2nd)|
+| Run time    | 121.913s      | 123.175s      | 123.656s        | 129.773s         | 1714.93s               |
+
